@@ -25,13 +25,13 @@ import type { Member } from './types';
 import { compressImage } from './imageUtils';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB8-djS2DTksN7rPyUYid5CHpdCEjGLig0",
-  authDomain: "kr-jeju.firebaseapp.com",
-  projectId: "kr-jeju",
-  storageBucket: "kr-jeju.firebasestorage.app",
-  messagingSenderId: "771190783639",
-  appId: "1:771190783639:web:a1734aaa2f80980fe833d2",
-  measurementId: "G-9QX5ZS9LC7"
+  apiKey: "AIzaSyCSO0Ram_VMgdxqVHSysAHQSI5eTEUjELU",
+  authDomain: "swiss-b47ba.firebaseapp.com",
+  projectId: "swiss-b47ba",
+  storageBucket: "swiss-b47ba.firebasestorage.app",
+  messagingSenderId: "33261442121",
+  appId: "1:33261442121:web:03b71a1911db3bbad6db98",
+  measurementId: "G-ZG74YDET9C"
 };
 
 const DEFAULT_TRIP_ID = 'trip_2025_nordic_master';

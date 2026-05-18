@@ -28,7 +28,7 @@ export default defineConfig({
         name: 'Switzerland Tour',
         short_name: 'Switzerland Tour',
         theme_color: '#5C5346',
-        background_color: '#E2F0D9',
+        background_color: '#DBE2D9',
         display: 'standalone',
         start_url: '/',
         icons: [

@@ -7,16 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: '#E2F0D9',        // Postcard Cream
+        cream: '#DBE2D9',        // Postcard Cream
         paper: '#8EAF9D',        // Aged Paper
         steel: '#8E9CA3',        // Faded Steel
         harbor: '#5C5346',       // Harbor Blue
-        stamp: '#FBBBB9',        // Warm Coral
-        ink: '#2B2C2B',          // Ink Charcoal
+        stamp: '#FFF2CC',        // Warm Coral
+        ink: '#5C5346',          // Ink Charcoal
         sage: '#5C5346',
         earth: '#8EAF9D',
         'earth-dark': '#8E9CA3',
-        terracotta: '#FBBBB9',
+        terracotta: '#FFF2CC',
         slate: '#8EAF9D',
       },
       borderRadius: {

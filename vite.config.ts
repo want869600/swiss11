@@ -27,8 +27,8 @@ export default defineConfig({
       manifest: {
         name: 'Switzerland Tour',
         short_name: 'Switzerland Tour',
-        theme_color: '#577C8E',
-        background_color: '#E7DDD3',
+        theme_color: '#5C5346',
+        background_color: '#E2F0D9',
         display: 'standalone',
         start_url: '/',
         icons: [

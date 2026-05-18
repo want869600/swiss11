@@ -154,15 +154,38 @@ const App: React.FC = () => {
       <Modal isOpen={showLockModal} onClose={() => setShowLockModal(false)} title="啟用編輯權限">
         <div className="space-y-4 text-center overflow-x-hidden">
           <p className="text-steel text-sm font-bold">請輸入編輯密碼以開啟修改功能</p>
-          <input 
-            type="password" 
-            value={pinInput} 
-            onChange={(e) => setPinInput(e.target.value)} 
-            className="w-full p-4 text-center text-3xl tracking-[0.5em] bg-white border-2 border-paper rounded-2xl focus:border-harbor transition-colors" 
-            placeholder="***"
-            maxLength={3} 
-            autoFocus 
-          />
+
+<input 
+  type="password" 
+  value={pinInput} 
+  onChange={(e) => {
+    const value = e.target.value;
+    setPinInput(value);
+
+    // 🔥 輸入滿 3 碼自動驗證
+    if (value.length === 3) {
+
+      if (value === '007') {
+        setIsEditMode(true);
+        setShowLockModal(false);
+        setPinInput('');
+      } else {
+        setTimeout(() => {
+          alert('密碼錯誤！');
+          setPinInput('');
+        }, 100);
+      }
+
+    }
+  }}
+  className="w-full p-4 text-center text-3xl tracking-[0.5em] bg-white border-2 border-paper rounded-2xl focus:border-harbor transition-colors" 
+  placeholder="***"
+  maxLength={3} 
+  autoFocus 
+/>
+
+
+          
           <NordicButton onClick={handleVerifyPin} className="w-full py-4">
             確認驗證
           </NordicButton>

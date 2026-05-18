@@ -121,13 +121,34 @@ useEffect(() => {
   const [dateRenameInput, setDateRenameInput] = useState('');
   const [shiftValue, setShiftValue] = useState(30);
 
-  useEffect(() => {
+useEffect(() => {
   if (dates.length === 0) {
     setSelectedDate('');
+    return;
+  }
+
+  // 今天日期（台灣時區）
+  const today = new Date();
+
+  const todayString =
+    `${today.getFullYear()}-` +
+    `${String(today.getMonth() + 1).padStart(2, '0')}-` +
+    `${String(today.getDate()).padStart(2, '0')}`;
+
+  // 找今天是否在行程中
+  const matchedDate = dates.find(date => date === todayString);
+
+  if (matchedDate) {
+    setSelectedDate(matchedDate);
   } else if (!selectedDate) {
+    // 找不到今天就回第一天
     setSelectedDate(dates[0]);
   }
 }, [dates]);
+
+
+
+  
 
   useEffect(() => {
     if (!dates || dates.length === 0) {

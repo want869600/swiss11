@@ -325,7 +325,7 @@ const getWeatherIcon = (condition: string, hour: string, temp: number) => {
     <div className="pb-24 px-4 space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500 overflow-x-hidden">
       <div className="pt-2 flex justify-between items-center px-1">
         <div className="flex items-center gap-2">
-          <h1 className="text-3xl font-bold text-ink tracking-tight">行程日誌</h1>
+          <h1 className="text-3xl font-bold text-ink tracking-tight">瑞士行程</h1>
           {onToggleLock && (
             <button 
               onClick={onToggleLock}

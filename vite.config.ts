@@ -25,8 +25,8 @@ export default defineConfig({
       ],
 
       manifest: {
-        name: '濟州島之旅',
-        short_name: '濟州島之旅',
+        name: 'Switzerland Tour',
+        short_name: 'Switzerland Tour',
         theme_color: '#577C8E',
         background_color: '#E7DDD3',
         display: 'standalone',

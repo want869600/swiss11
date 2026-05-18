@@ -7,17 +7,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: '#E7DDD3',        // Postcard Cream
-        paper: '#D2C2B2',        // Aged Paper
+        cream: '#E2F0D9',        // Postcard Cream
+        paper: '#8EAF9D',        // Aged Paper
         steel: '#8E9CA3',        // Faded Steel
-        harbor: '#577C8E',       // Harbor Blue
-        stamp: '#DC8670',        // Warm Coral
+        harbor: '#5C5346',       // Harbor Blue
+        stamp: '#FBBBB9',        // Warm Coral
         ink: '#2B2C2B',          // Ink Charcoal
-        sage: '#577C8E',
-        earth: '#D2C2B2',
+        sage: '#5C5346',
+        earth: '#8EAF9D',
         'earth-dark': '#8E9CA3',
-        terracotta: '#DC8670',
-        slate: '#D2C2B2',
+        terracotta: '#FBBBB9',
+        slate: '#8EAF9D',
       },
       borderRadius: {
         '3xl': '1.5rem',

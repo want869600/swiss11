@@ -10,9 +10,9 @@ export default {
         cream: '#DBE2D9',        // Postcard Cream
         paper: '#8EAF9D',        // Aged Paper
         steel: '#8E9CA3',        // Faded Steel
-        harbor: '#F4E7C5',       // Harbor Blue
+        harbor: '#5C5346',       // Harbor Blue
         stamp: '#8EAF9D',        // Warm Coral
-        ink: '#5C5346',          // Ink Charcoal
+        ink: '#F4E7C5',          // Ink Charcoal
         sage: '#5C5346',
         earth: '#8EAF9D',
         'earth-dark': '#8E9CA3',

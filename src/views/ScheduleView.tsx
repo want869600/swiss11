@@ -516,7 +516,7 @@ const getWeatherIcon = (condition: string, hour: string, temp: number) => {
                   </span>
                 </div>
               )}
-            {item.note && <p className="text-xs text-dark font-normal mt-2 whitespace-pre-line">{item.note}</p>}
+            {item.note && <p className="text-xs text-dark/80 font-normal mt-2 whitespace-pre-line">{item.note}</p>}
               </div>
               {isEditMode && (
                 <button 

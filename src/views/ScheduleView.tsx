@@ -83,8 +83,8 @@ const fixToTraditional = (text: string) => {
 // 👇 新增在這裡
 const TRANSPORT_OPTIONS = [
   { key: 'walk', emoji: '🚶', label: '步行' },
-  { key: 'drive', emoji: '🚗', label: '纜車' },
-  { key: 'transit', emoji: '🚇', label: '火車' },
+  { key: 'drive', emoji: '🚠', label: '纜車' },
+  { key: 'transit', emoji: '🚂', label: '火車' },
   { key: 'flight', emoji: '🛫', label: '飛機' },
 ] as const;
 
@@ -496,14 +496,14 @@ const getWeatherIcon = (condition: string, hour: string, temp: number) => {
                 <div className="mt-1 flex items-center gap-2 text-[11px] font-bold text-earth-dark opacity-80">
                   <span className="text-base leading-none">
                     {item.transportMode === 'walk' && '🚶'}
-                    {item.transportMode === 'drive' && '🚗'}
-                    {item.transportMode === 'transit' && '🚇'}
+                    {item.transportMode === 'drive' && '🚠'}
+                    {item.transportMode === 'transit' && '🚂'}
                     {item.transportMode === 'flight' && '🛫'}
                   </span>
                   <span>
                     {item.transportMode === 'walk' && '步行'}
                     {item.transportMode === 'drive' && '車程'}
-                    {item.transportMode === 'transit' && '捷運'}
+                    {item.transportMode === 'transit' && '火車'}
                     {item.transportMode === 'flight' && '飛行'}
                     {' '}
                     {(() => {
@@ -516,7 +516,7 @@ const getWeatherIcon = (condition: string, hour: string, temp: number) => {
                   </span>
                 </div>
               )}
-            {item.note && <p className="text-xs text-earth-dark font-normal mt-2 whitespace-pre-line">{item.note}</p>}
+            {item.note && <p className="text-xs text-dark font-normal mt-2 whitespace-pre-line">{item.note}</p>}
               </div>
               {isEditMode && (
                 <button 

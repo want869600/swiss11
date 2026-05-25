@@ -83,8 +83,8 @@ const fixToTraditional = (text: string) => {
 // 👇 新增在這裡
 const TRANSPORT_OPTIONS = [
   { key: 'walk', emoji: '🚶', label: '步行' },
-  { key: 'drive', emoji: '🚗', label: '開車' },
-  { key: 'transit', emoji: '🚇', label: '捷運' },
+  { key: 'drive', emoji: '🚗', label: '纜車' },
+  { key: 'transit', emoji: '🚇', label: '火車' },
   { key: 'flight', emoji: '🛫', label: '飛機' },
 ] as const;
 
@@ -516,7 +516,7 @@ const getWeatherIcon = (condition: string, hour: string, temp: number) => {
                   </span>
                 </div>
               )}
-            {item.note && <p className="text-xs text-earth-dark font-normal mt-2 italic whitespace-pre-line">{item.note}</p>}
+            {item.note && <p className="text-xs text-earth-dark font-normal mt-2 whitespace-pre-line">{item.note}</p>}
               </div>
               {isEditMode && (
                 <button 
